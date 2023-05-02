@@ -7,7 +7,7 @@
     android:background="@color/MainRed"
     tools:context=".HomeActivity">
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/fragmentContainerView"
         android:name="com.example.projecthetwapen.UI.homepage.Homepage"
         android:layout_width="match_parent"
@@ -24,7 +24,8 @@
         android:id="@+id/menubar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_nav_menu"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
