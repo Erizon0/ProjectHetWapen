@@ -12,4 +12,15 @@
     <string name="contact">Contact</string>
     <string name="img_text_1">Welkom bij het wapen van roosendaal</string>
     <string name="img_text_2">“In ons café vind je gezelligheid onder vrienden, familie en collega’s!”</string>
+    <string name="condition2">Geen behoud van niet genomen bieren</string>
+    <string name="price">€77,- per maand</string>
+    <string name="condition1">Geen 2 bieren tegelijk afnemen</string>
+    <string name="event_discount">10% korting op al onze evenementen</string>
+    <string name="and_get">en krijg</string>
+    <string name="variation_on_tap">Elke maand andere bieren op de tap</string>
+    <string name="own_choise">Allemaal naar eigen keuze van de tap</string>
+    <string name="amount_of_beer">16 biertjes</string>
+    <string name="subscription_title">Abonnement het Wapen</string>
+    <string name="activate_subscription">Afsluiten kan op de website of bij een medewerker op locatie</string>
+
 </resources>
