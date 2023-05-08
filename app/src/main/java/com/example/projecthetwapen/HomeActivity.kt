@@ -17,8 +17,10 @@ class HomeActivity : AppCompatActivity() {
 
         val navView : BottomNavigationView = findViewById(R.id.menubar)
 
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
-        val navController = navHostFragment.navController
+        val navController = findNavController(R.id.nav_host_fragment_activity_main)
+
+//        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+//        val navController = navHostFragment.navController
 
         val appBarConfiguration = AppBarConfiguration(
             setOf(
@@ -26,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
             )
         )
 
-        setupActionBarWithNavController(navController, appBarConfiguration)
+//        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
     }
