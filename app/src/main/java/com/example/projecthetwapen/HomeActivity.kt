@@ -2,6 +2,9 @@ package com.example.projecthetwapen
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+
+import com.example.projecthetwapen.DATA.APIController
+
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
@@ -10,9 +13,13 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 //import com.example.projecthetwapen.binding
 
+
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val apiCall = APIController(this)
+        apiCall.getData()
+
         setContentView(R.layout.activity_home)
 
         val navView : BottomNavigationView = findViewById(R.id.menubar)
