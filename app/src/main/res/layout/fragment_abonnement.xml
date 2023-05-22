@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    tools:context=".UI.homepage.AbonnementFragment"
+    tools:context=".UI.subscription.AbonnementFragment"
     android:background="@color/MainRed"
     >
 
