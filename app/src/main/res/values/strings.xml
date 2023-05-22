@@ -37,5 +37,9 @@
     <string name="brewery_type">Micro Brewery</string>
     <string name="brewery_location">Middelburg, Zeeland Netherlands</string>
 
+    <string name="home">home</string>
+    <string name="menu">Menu</string>
+    <string name="subscription">Abonnement</string>
+
 
 </resources>
