@@ -103,7 +103,7 @@
 
                     <ImageView
                         android:id="@+id/imageView5"
-                        android:layout_width="192dp"
+                        android:layout_width="104dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/affligem" />
@@ -117,17 +117,17 @@
 
                     <ImageView
                         android:id="@+id/imageView6"
-                        android:layout_width="239dp"
+                        android:layout_width="149dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/desperados" />
 
                     <ImageView
                         android:id="@+id/imageView3"
-                        app:srcCompat="@drawable/heineken"
-                        android:layout_width="wrap_content"
+                        android:layout_width="129dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/heineken" />
 
                     <ImageView
                         android:id="@+id/imageView2"
