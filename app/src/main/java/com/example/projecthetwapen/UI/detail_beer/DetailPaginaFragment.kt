@@ -1,10 +1,11 @@
-package com.example.projecthetwapen
+package com.example.projecthetwapen.UI.detail_beer
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.projecthetwapen.R
 
 
 class detailPaginaFragment : Fragment() {
