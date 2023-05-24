@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
+import android.widget.ListView
 import com.example.projecthetwapen.DATA.APIController
 import com.example.projecthetwapen.DATA.API_Call
 import com.example.projecthetwapen.DATA.Beer
@@ -19,7 +21,7 @@ class Menu_Beer : Fragment(), API_Call {
 
     private lateinit var viewModel: MenuBeerViewModel
 
-    var apiC = APIController.getInstance(this.requireContext())
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,6 +36,14 @@ class Menu_Beer : Fragment(), API_Call {
         // TODO: Use the ViewModel
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        var apiC = APIController.getInstance(this.requireContext())
+        val beerList = view.findViewById<ListView>(R.id.beerList)
+        val beerAdapter = ArrayAdapter(this.requireContext(), android.R.layout.simple_list_item_1, apiC.getBeer())
+        beerList.adapter = beerAdapter
+    }
     override fun onSuccess(bList: ArrayList<Beer>) {}
 
 }
