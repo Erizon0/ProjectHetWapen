@@ -1,5 +1,7 @@
 package com.example.projecthetwapen.UI.menu_beer
 
+import CustomAdapter
+import CustomAdapter2
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -42,7 +44,8 @@ class Menu_Beer : Fragment(), API_Call {
         var apiC = APIController.getInstance(this.requireContext())
         val beerList = view.findViewById<ListView>(R.id.beerList)
         val beerAdapter = ArrayAdapter(this.requireContext(), android.R.layout.simple_list_item_1, apiC.getBeer())
-        beerList.adapter = beerAdapter
+        val adapter = CustomAdapter2(this.requireContext(), apiC.getBeer())
+        beerList.adapter = adapter
     }
     override fun onSuccess(bList: ArrayList<Beer>) {}
 
