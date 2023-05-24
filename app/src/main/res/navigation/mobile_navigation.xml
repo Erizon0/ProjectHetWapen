@@ -16,4 +16,9 @@
         android:name="com.example.projecthetwapen.UI.subscription.AbonnementFragment"
         tools:layout="@layout/fragment_abonnement"/>
 
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.example.projecthetwapen.UI.menu_beer.Menu_Beer"
+        tools:layout="@layout/fragment_menu__beer"/>
+
 </navigation>

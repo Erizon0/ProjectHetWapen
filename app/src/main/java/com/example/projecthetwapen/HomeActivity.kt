@@ -17,8 +17,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val apiCall = APIController(this)
-        apiCall.getData()
 
         setContentView(R.layout.activity_home)
 
