@@ -9,6 +9,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
 import com.example.projecthetwapen.DATA.APIController
 import com.example.projecthetwapen.R
 import java.io.BufferedInputStream
@@ -37,17 +39,26 @@ class DetailPaginaFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        requireView().setOnTouchListener { view, motionEvent -> return@setOnTouchListener true }
 
-        val i = arguments?.getInt("selected")
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, object : OnBackPressedCallback(true){
+            override fun handleOnBackPressed() {
+                requireActivity().supportFragmentManager.beginTransaction().remove(this@DetailPaginaFragment).commit()
+            }
+        })
+
+        val i : Int? = arguments?.getInt("selected")
+
         val apiC = APIController.getInstance(this.requireContext())
-        //TODO null pointer exception oplossen
-        val selectedBeer = apiC.getBeer()[i!!]
+        val selectedBeer = apiC.getBeer().get(i!!)
 
         val beerimage = view.findViewById<ImageView>(R.id.backgroundImage)
         val beerFrontImage = view.findViewById<ImageView>(R.id.frontImage)
+        val breweryName = view.findViewById<TextView>(R.id.breweryName)
 
         LoadImageTask(beerimage).execute(selectedBeer.image)
         LoadImageTask(beerFrontImage).execute(selectedBeer.image)
+        breweryName.text = selectedBeer.brewery
     }
 
     private inner class LoadImageTask(private val imageView: ImageView) : AsyncTask<String, Void, Bitmap?>() {
@@ -86,4 +97,6 @@ class DetailPaginaFragment : Fragment() {
             }
         }
     }
+
+
 }

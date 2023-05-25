@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.menu_beer.Menu_Beer">
+    tools:context=".UI.menu_beer.Menu_Beer"
+    android:background="@color/secondary">
 
     <ListView
         android:id="@+id/beerList"

@@ -56,6 +56,7 @@ class Menu_Beer : Fragment(), API_Call {
 
             val frag = DetailPaginaFragment()
 
+            frag.arguments = selection
             fm.beginTransaction()
                 .replace(R.id.nav_host_fragment_activity_main, frag, null)
                 .commit()
