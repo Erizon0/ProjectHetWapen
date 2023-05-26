@@ -52,13 +52,26 @@ class DetailPaginaFragment : Fragment() {
         val apiC = APIController.getInstance(this.requireContext())
         val selectedBeer = apiC.getBeer().get(i!!)
 
-        val beerimage = view.findViewById<ImageView>(R.id.backgroundImage)
+//        val beerimage = view.findViewById<ImageView>(R.id.backgroundImage)
         val beerFrontImage = view.findViewById<ImageView>(R.id.frontImage)
+        val beerName = view.findViewById<TextView>(R.id.beerName)
         val breweryName = view.findViewById<TextView>(R.id.breweryName)
+        val stars = view.findViewById<ImageView>(R.id.Stars)
 
-        LoadImageTask(beerimage).execute(selectedBeer.image)
+//        LoadImageTask(beerimage).execute(selectedBeer.image)
         LoadImageTask(beerFrontImage).execute(selectedBeer.image)
+        beerName.text = selectedBeer.name
         breweryName.text = selectedBeer.brewery
+
+        val star_one = "@drawable/1star"
+
+        when(selectedBeer.stars){
+            1 -> stars.setImageResource(R.drawable.one_star)
+            2 -> stars.setImageResource(R.drawable.two_star)
+            3 -> stars.setImageResource(R.drawable.three_star)
+            4 -> stars.setImageResource(R.drawable.four_star)
+            5 -> stars.setImageResource(R.drawable.five_star)
+        }
     }
 
     private inner class LoadImageTask(private val imageView: ImageView) : AsyncTask<String, Void, Bitmap?>() {
