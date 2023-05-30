@@ -62,6 +62,7 @@ class Menu_Beer : Fragment(), API_Call {
 
             frag.arguments = selection
             fm.beginTransaction()
+                .setCustomAnimations(androidx.appcompat.R.anim.abc_slide_in_top, androidx.appcompat.R.anim.abc_slide_out_bottom)
                 .replace(R.id.nav_host_fragment_activity_main, frag, null)
                 .commit()
 
