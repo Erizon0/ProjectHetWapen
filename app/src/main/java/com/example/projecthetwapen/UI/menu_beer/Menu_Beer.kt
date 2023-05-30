@@ -11,11 +11,15 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.ListView
 import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.transaction
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import com.example.projecthetwapen.DATA.APIController
 import com.example.projecthetwapen.DATA.API_Call
 import com.example.projecthetwapen.DATA.Beer
 import com.example.projecthetwapen.R
 import com.example.projecthetwapen.UI.detail_beer.DetailPaginaFragment
+import com.example.projecthetwapen.UI.homepage.Homepage
 
 class Menu_Beer : Fragment(), API_Call {
 

@@ -27,7 +27,6 @@ class Homepage : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(HomepageViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
 }
