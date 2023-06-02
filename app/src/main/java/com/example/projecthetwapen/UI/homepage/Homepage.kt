@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.projecthetwapen.R
 
+
 class Homepage : Fragment() {
 
     companion object {
@@ -26,7 +27,6 @@ class Homepage : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(HomepageViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
 }

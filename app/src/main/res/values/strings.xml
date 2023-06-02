@@ -2,6 +2,7 @@
     <string name="app_name">Het wapen van Roosendaal</string>
     <string name="welkom">Welkom bij onze nieuwe app</string>
     <string name="aankomend_evenement">Aankomend evenement</string>
+    <string name="aankomend_evenement_beschrijving">Op 2 april om 14:00 is het weer zo ver! 5 zaken waaronder \'t Wapen trekken alles uit de kast om Roosendaal en omstreken te laten genieten van heerlijke speciaalbieren met prachtige culinaire combinaties tijdens de Bier- &amp; Spijs route.</string>
     <string name="openingstijden">Openingstijden</string>
     <string name="dinsdag">Dinsdag</string>
     <string name="other_days">Woensdag \n tot \n Maandag</string>
@@ -31,5 +32,16 @@
     <string name="paragraf_5">In 2012 werden de tosti’s van het Wapen geïntroduceerd. De lunchkaart kwam hiermee weer terug en dit vroeg ook om de nodige aanpassingen in de inmiddels verouderde keuken. In 2015 werd de keuken verbouwd met het oog op verdere groei in de toekomst.</string>
     <string name="paragraf_6">Stilstand is achteruitgang. In 2019 werd het café daarom groots verbouwd om met de trend van speciaalbier mee te kunnen gaan. Nu heeft het Wapen de mooiste tapinstallatie van Nederland met maar liefst 24 tapkranen! In 2020 stopte Henri en ging hij genieten van zijn welverdiende pensioen.</string>
     <string name="paragraf_7">Zoals je ziet is het Wapen sinds 1970 zeker gegroeid, maar de basis is altijd belangrijk gebleven. Zo zijn we nog steeds de thuisbasis van veel carnavalsbandjes, verenigingen, clubjes en vriendengroepen. Na al die jaren zijn we nog steeds de huiskamer van Roosendaal.</string>
+
+    <string name="beer_name">Bier nummer 1</string>
+    <string name="brewery_name">Het wapen van roosendaal</string>
+    <string name="brewery_type">Bruin cafè</string>
+    <string name="brewery_location">Roosendaal, Noord-Brabant</string>
+
+    <string name="home">home</string>
+    <string name="menu">Menu</string>
+    <string name="subscription">Abonnement</string>
+    <string name="loadingText">Tapping Beer...</string>
+
 
 </resources>
